@@ -13,12 +13,8 @@ export const routes: Routes = [
   { path: 'connexion', component: ConnexionComponent },
   { path: 'consulter', component: ConsulterComponent },
   { path: 'fichefrais', component: FicheFraisComponent },
-  {
-    path: 'ajouter',
-    loadComponent: () => import('./client/ajouter/ajouter.component').then(m => m.AjouterComponent)
-  },
+  { path: 'ajouter', loadComponent: () => import('./client/ajouter/ajouter.component').then(m => m.AjouterComponent)  },
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]

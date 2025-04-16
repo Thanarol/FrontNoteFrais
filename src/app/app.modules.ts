@@ -1,10 +1,12 @@
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AuthInterceptor } from '../../AuthInterceptor';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routes';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [ ],
@@ -12,7 +14,11 @@ import { AppRoutingModule } from './app.routes';
     BrowserModule,
     ReactiveFormsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule,
+    CommonModule,
+    FormsModule,
+    AppModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
@@ -20,3 +26,4 @@ import { AppRoutingModule } from './app.routes';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+export class ModifierComponent{}

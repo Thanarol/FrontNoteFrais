@@ -22,13 +22,14 @@
   <p>Aucune note de frais enregistrée pour l'instant.</p>
 </div>
 
-<table *ngIf="!isLoading && fiches.length > 0">
+<table *ngIf="!isLoading && fiches.length > 0" border="1" style="margin: auto">
   <thead>
     <tr>
       <th>Mois</th>
       <th>Montant validé</th>
       <th>Nombre de justificatifs</th>
       <th>Date de modification</th>
+      <th>Actions</th>
     </tr>
   </thead>
   <tbody>
@@ -37,6 +38,10 @@
       <td>{{ fiche.montantValide }} €</td>
       <td>{{ fiche.nbJustificatifs }}</td>
       <td>{{ fiche.dateModif | date: 'dd/MM/yyyy' }}</td>
+      <td>
+        <button (click)="modifierFiche(fiche)">Modifier</button>
+        <button *ngIf="fiche.id !== undefined" (click)="supprimerFiche(fiche.id!)">Supprimer</button>
+      </td>
     </tr>
   </tbody>
 </table>
