@@ -43,28 +43,27 @@ button:hover {
 }
 
 /* NavBar */
-
 nav {
     background-color: #222;
     padding: 20px 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
     margin-top: -8px;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     margin: 0 20px;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     text-decoration: none;
     color: #f0f0f0;
     font-size: 18px;
@@ -72,18 +71,20 @@ nav {
     padding: 12px 20px;
     border-radius: 6px;
     transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
+}
+
+nav ul li a:hover {
     background-color: lightblue;
     color: #000;
-  }
-  
-  nav ul li a:active {
+}
+
+nav ul li a:active {
     background-color: #555;
     color: #fff;
-  }
-  table {
+}
+
+/* Table Styling */
+table {
     width: 80%;
     margin: 40px auto;
     border-collapse: collapse;
@@ -121,4 +122,55 @@ caption {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+/* Specific Style for "Hors Forfait" Fiches */
+.hors-forfait {
+    background-color: #ffe5e5; /* Light red for "Hors Forfait" */
+    font-weight: bold;
+}
+
+.hors-forfait-tag {
+    color: red;
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+/* Highlighting actions in table */
+button {
+    background-color: #ff4d4d; /* Red color for actions */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Modifier button color */
+.modifier-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.modifier-btn:hover {
+    background-color: #444; 
+}
+
+
+button:hover {
+    background-color: #ff6666; 
+}
+
+.hors-forfait-summary {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
 }

@@ -25,3 +25,41 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+__________________________________________________________________________________________________________________________________
+
+# 💼 Application de gestion de notes de frais
+
+Ce projet est une application complète dans le contexte GSB composée de deux parties :
+
+- **Frontend Angular (Celui-ci)**
+- **Backend Spring Boot**
+
+L'objectif est de permettre à des visiteurs de consulter, ajouter, modifier et supprimer leurs fiches de frais. Si le montant d'une fiche dépasse 150€, elle est automatiquement considérée comme une fiche hors forfait.
+
+---
+
+#### 📁 ReadMe
+# 🎨 Frontend — Application Angular
+
+Ce projet Angular 18 permet aux utilisateurs de :
+
+- Se connecter en tant que visiteurs
+- Ajouter des fiches de frais (forfaitaires et hors forfait)
+- Visualiser la liste de leurs fiches
+- Modifier et supprimer des fiches
+
+## 📦 Dépendances principales
+
+- Angular CLI 18
+- HttpClient (pour les appels REST)
+- Composants standalone
+- Routing Angular
+- HTML/CSS (séparation complète)
+
+## ▶️ Lancer le frontend
+
+```bash
+npm install
+ng serve
